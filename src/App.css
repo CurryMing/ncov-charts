@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --color-yollow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+* > * {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.web-title {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.bg-yellow {
+  background-color: var(--color-yollow);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.chart {
+  margin-right: 0.75rem;
+}
+
+.area-list {
+  margin-bottom: 0.5rem;
+}
+
+.area-box {
+  display: flex;
+  align-items: center;
+}
+.risk-area {
+  width: 40rem;
+  padding: 0.25rem 0.5rem;
+}
+.badge {
+  text-align: center;
+  line-height: 13.15px;
+}
+.area-name {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  color: rgb(248, 249, 250);
+  background-color: rgb(33, 37, 41);
+  padding: 0.25rem;
+}
+
+.my-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.nav-tabs {
+  border: 1px solid #ddd;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.nav-link {
+  color: #000 !important;
+}
+.nav-link.active {
+  border: none;
+}
+.high-nav.active {
+  color: #fff !important;
+  background-color: rgb(220, 53, 69) !important;
+}
+.mid-nav.active {
+  background-color: rgb(255, 193, 7) !important;
+}
+.ret-nav.active {
+  color: #fff !important;
+  background-color: rgb(25,135,84) !important;
+}
+.high-nav-active {
+  color: #fff !important;
+  background-color: rgb(220, 53, 69);
+}
+.mid-nav-active {
+  color: #000 !important;
+  background-color: rgb(255, 193, 7);
+}
+.high-link {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.mid-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.high-nav {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.mid-nav {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.ret-nav {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+canvas {
+  padding: 0.5rem;
+}
+
+.form-input {
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
+@media screen and (max-width: 576px) {
+  .App {
+    padding: 0.5rem 0.25rem;
+  }
+  .chart-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .risk-area {
+    width: 22rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .chart {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+  .area-name {
+    margin-left: 0rem;
+    margin-top: 0.25rem;
+  }
+  .web-title {
+    margin-bottom: 0.5rem;
+  }
+  .area-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .area-list {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,2 @@
+export const GETNCOVDATA = "GETNCOVDATA";
+export const GETRETDATA = "GETRETDATA";
