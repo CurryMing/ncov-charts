@@ -187,11 +187,11 @@ export function ret_Data(retData) {
         type: "pie",
         radius: "50%",
         data: [
-          { value: retData.confirm, name: "总确认" },
+          { value: retData.confirm, name: "总确诊" },
           { value: retData.heal, name: "治愈" },
           { value: retData.nativeRelative, name: "本土新增" },
           { value: retData.died, name: "死亡" },
-          { value: retData.curConfirm, name: "当前确认" },
+          { value: retData.curConfirm, name: "现有确诊" },
         ],
         emphasis: {
           itemStyle: {
